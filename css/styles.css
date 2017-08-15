@@ -1,0 +1,619 @@
+/* Gerais -------------------- */
+*{
+	margin:0; 
+	padding:0; 
+	outline:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{height:100%;}
+
+body{
+	font:14px Helvetica, arial, sans-serif !important; 
+	color:#7F7F7F;
+	background:#ecf0f1;
+}
+
+li{list-style:none;}
+
+.container{
+	margin:0 auto;
+	width:1139px;
+}
+
+.titleSection{
+	color:#283c4f;
+	text-transform:lowercase;
+	font-size:28px;
+	font-weight:normal;
+	margin-bottom:14px;
+}
+
+br{clear:both;}
+a{text-decoration:none;}
+/* end: Gerais -------------------- */
+
+
+/* Topo ----------------------- */
+header{
+	height:114px;
+	background:#3199dc;
+	width:100%;
+	margin-bottom:73px;
+}
+
+header .menu,
+header .logo,
+header .socialMedia{
+	float:left;
+	height:114px;
+	position:relative;
+}
+
+header .menu{width:10%;}
+header .logo{width:72%;}
+header .socialMedia{width:18%;}
+
+
+header .menu .linkMenu{
+	display: block;
+    width: 48px;
+    height: 40px;
+    background: url(../slices/desktop/menu-icon.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -24px;
+}
+
+header .logo h1{
+	height: 98px;
+	background: url(../slices/desktop/logo.png) no-repeat 156px 0px;
+	margin-top: 15px;
+	font-size: 17px;
+	color: #d0f3ff;
+	font-weight: normal;
+	padding: 45px 0px 0px 400px;
+}
+
+header .socialMedia a{
+	display: block;
+	border: solid 1px #2581ba;
+	border-radius: 5px;
+	background: url(../slices/desktop/facebook.png) no-repeat 15px center #fff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	text-transform: uppercase;
+	color: #37579b;
+	width: 88px;
+	height: 32px;
+	font-size: 11px;
+	float: left;
+	text-align: right;
+	padding: 9px 13px 0;
+    margin-top: 38px;
+	transition:0.3s;
+}
+
+header .socialMedia a.twitter{
+	background: url(../slices/desktop/twitter.png) no-repeat 9px center #fff;
+	color:#54adee;
+	float:right;
+}
+
+header .socialMedia a:hover{
+	background-color:#799fef;
+	color:#fff;
+}
+header .socialMedia a.twitter:hover{background-color:#84d0ff;}
+/* end: Topo ----------------------- */
+
+
+/* Slider ----------------------- */
+.slider{
+	margin-bottom:50px;
+	position:relative;
+}
+
+.slider .arrow_left,
+.slider .arrow_right{
+	display: block;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url(../slices/desktop/arrow_left-icon.png) no-repeat 16px center #fff;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	border-radius: 50%;
+	left: -27px;
+	cursor: pointer;
+	top: 50%;
+	margin-top: -25px;
+	transition:0.3s;
+}
+
+.slider .arrow_right{
+	background-image:url(../slices/desktop/arrow_right-icon.png);
+	right:-27px;
+	left:auto;
+}
+
+.slider .arrow_left:hover,
+.slider .arrow_right:hover{background-color:#ececec;}
+
+.slider .description{
+	position: absolute;
+    bottom: 25px;
+    width: 560px;
+    height: 100px;
+    left: 20px;
+}
+
+.slider .description h4{
+	padding: 4px 18px;
+	background: #2e8dca;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: inline-block;
+	min-width: 300px;
+	font-weight: normal;
+}
+
+.slider .description span{
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+	display: block;
+	margin-top: 7px;
+}
+/* end: Slider ----------------------- */
+
+
+
+/* Top Cacilds ----------------------- */
+.topCacilds{margin-bottom:62px;}
+
+.topCacilds .top{
+	display:inline-block;
+	margin-right:25px;
+	position:relative;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+.topCacilds .top:hover{opacity:.8;}
+
+.topCacilds .top:last-of-type{margin-right:0px;}
+
+.topCacilds .top figcaption{
+	position: absolute;
+    margin: -10px 0px 0px 0px;
+    background: rgba(231,93,102,.8);
+    color: #fff;
+    text-transform: uppercase;
+    bottom: 13px;
+    padding: 7px 14px;
+}
+/* end: Top Cacilds ----------------------- */
+
+
+
+/* Divolts Porris ----------------------- */
+.divoltsPorris{
+	width:66%;
+	float:left;
+	margin-bottom: 40px;
+}
+
+.divoltsPorris .divolts{
+	display: inline-block;
+    margin: 0 25px 30px 0px;
+    width: 360px;
+    color: #37495b;
+    font-size: 15px;
+    border-bottom: solid 1px #d4d4d4;
+    height: 310px;
+	cursor:pointer;
+	transition:0.3s;
+}
+.divoltsPorris .divolts:hover{opacity:0.8;}
+
+.divoltsPorris .divolts img{
+	width: 361px;
+	height: 215px;
+}
+
+.divoltsPorris .divolts:nth-child(odd){margin-right:0px}
+
+.divoltsPorris .divolts .titleDivolts{
+	color: #2581ba;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 9px 0px;
+}
+/* end: Divolts Porris ----------------------- */
+
+
+
+/* Publicidade Desktop / Mobile ----------------------- */
+.publicidade-desktop,
+.publicidade-mobile{
+	width: 34%;
+    float: left;
+    padding: 0px 31px 0px 57px;
+	margin-bottom: 80px;
+}
+
+.publicidade-desktop .titlePublicidade,
+.publicidade-mobile .titlePublicidade{
+	display: block;
+    color: #9a9a9a;
+    font-size: 11px;
+    margin: 30px 0px 3px 0px;
+    text-align: right;
+}
+
+.publicidade-mobile{display:none;}
+/* end: Publicidade Desktop ----------------------- */
+
+
+.paisis,
+.pirulita,
+.cevadiss{
+	display:block;
+	width:359px;
+	float:left;
+	margin-right:30px;
+}
+
+.paisis .titleSection,
+.pirulita .titleSection,
+.cevadiss .titleSection{
+	color:#e84b3a;
+	height:26px;
+}
+
+
+/* Paisis ----------------------------- */
+.paisis .titleSection{color:#47b4ec;}
+.paisis ul li{border-bottom:solid 1px #d4d4d4;}
+
+.paisis ul li a{
+	display: block;
+	color: #37495b;
+	font-size: 16px;
+	padding: 14px 6px;
+}
+
+.paisis ul li:hover a{
+	background:#19a5ea;
+	color:#fff;
+}
+/* end: Paisis ----------------------------- */
+
+
+
+/* Pirulita / Cevadiss----------------------------- */
+.itemPirulita,
+.itemCevadiss{
+	height: 183px;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+.itemPirulita:hover,
+.itemCevadiss:hover{opacity:.6;}
+
+.itemPirulita figure,
+.itemCevadiss figure,
+.itemPirulita .desc,
+.itemCevadiss .desc{
+	display:block;
+	float:left;
+}
+
+.itemPirulita figure,
+.itemCevadiss figure{margin-right:15px;}
+
+.itemPirulita .desc,
+.itemCevadiss .desc{
+	color: #37495b;
+	font-size: 15px;
+	width: 160px;
+	margin-top: 20px;
+}
+
+.itemPirulita .desc strong,
+.itemCevadiss .desc strong{
+	display: block;
+    text-transform: uppercase;
+    color: #e84b3a;
+    margin-bottom: 4px;
+}
+
+.cevadiss{margin-right:0px;}
+/* end: Pirulita / Cevadiss----------------------------- */
+
+
+/* Footer ------------------------------ */
+footer{
+	background:#283c4f;
+	width:100%;
+	margin-top:200px;
+}
+
+footer .backTop{
+	height: 48px;
+	background: #3199dc;
+	padding-top: 14px;
+}
+
+footer .backTop .top{
+	display: block;
+	margin: 0px 0px 0px auto;
+	color: #fff;
+	background: url(../slices/mobile/arrow_top-icon.png) no-repeat right center;
+	padding: 4px 0px 0px 0px;
+	text-transform: uppercase;
+	width: 148px;
+	height: 23px;
+}
+footer .backTop .top:hover{text-decoration:underline;}
+
+footer .copyright{
+	color: #fff;
+	font-size: 12px;
+	display: block;
+	padding: 28px 0px 0px 223px;
+	background: url(../slices/desktop/logo_footer.png) no-repeat 0 center;
+	height: 80px;
+	width: 900px;
+}
+
+footer .copyright a{color:#fff;}
+footer .copyright a:hover{text-decoration:underline;}
+
+
+/* MOBILE ------------------------------------------------------------------- */
+@media only screen and (max-width: 1221px){
+	.container{width: 970px;}
+	
+	/* Header ----- */
+	header .logo{width: 70%;}
+	
+	header .logo h1 {
+		background-position:88px 0px;
+		padding: 45px 0px 0px 326px;
+	}
+	
+	header .socialMedia{width: 19%;}
+	
+	
+	/* Slider ------- */
+	.slider,
+	.itemSlider,
+	.itemSlider img{width:100%;}
+	
+	.slider .arrow_left{left: 15px;}
+	.slider .arrow_right{right: 15px;}
+	
+	
+	/* Top cacilds ---------- */
+	.topCacilds .top{width: 303px;}
+	.topCacilds .top img{width:100%;}
+	
+	
+	/* Divolts -------------- */
+	.divoltsPorris .divolts img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.divoltsPorris .divolts{width: 304px;}
+	
+	
+	/* Publicidade ----- */
+	.publicidade-desktop {padding: 0px 31px 0px 30px;}
+	
+	
+	/* Paisis, Pirulita, Cevadiss ---------- */
+	.paisis, .pirulita, .cevadiss {width: 300px;}
+	.itemPirulita .desc, .itemCevadiss .desc{width: 118px;}
+	
+	.paisis .titleSection{font-size:25px;}
+	.paisis ul li a{font-size: 15px;}
+}
+
+
+@media only screen and (max-width: 991px){
+	.container{width: 750px;}
+	
+	/* Header ------- */
+	header .logo{width: 79%;}
+	
+	header .logo h1 {
+		background-position: 28px 0px;
+		padding: 45px 0px 0px 286px;
+	}
+	
+	header .socialMedia a{
+		width: 38px;
+		overflow: hidden;
+		text-indent: -400px;
+		text-align: left;
+	}
+	
+	header .socialMedia{width: 11%;}
+	
+	
+	/* Slider --------- */
+	.slider .arrow_left, 
+	.slider .arrow_right{display:none;}
+	
+	
+	/* Top Cacilds ------ */
+	.topCacilds .top{width: 230px;}
+	
+	
+	/* Divolts Porris ------- */
+	.divoltsPorris {
+		width: 100%;
+		float: none;
+	}
+	
+	.divoltsPorris .divolts{width: 359px;}
+	
+	
+	/* Publicidade ----- */
+	.publicidade-mobile{display:block;}
+	.publicidade-desktop{display:none;}
+	
+	.publicidade-mobile {
+		width: 48%;
+		float: left;
+		padding: 0px 31px 0px 33px;
+		margin-bottom: 80px;
+	}
+	
+	
+	/* Paisis, Pirulita, Cevadiss-------- */
+	.paisis, .pirulita, .cevadiss{
+		width: 358px;
+		margin-bottom: 40px;
+	}
+	.pirulita{margin-right:0px;}
+	
+	.itemPirulita .desc, .itemCevadiss .desc{width: 140px;}
+	
+	
+	/* Footer ------------- */
+	footer .copyright {
+		padding: 28px 0px 0px 153px;
+		height: 100px;
+		width: 750px;
+	}
+}
+
+
+
+@media only screen and (max-width: 767px){
+	.container{width: 95%;}
+	
+	/* Header ---------- */
+	.socialMedia{display:none;}
+	
+	header .menu{width: 20%;}
+	header .logo{width: 80%;}
+	
+	header .menu .linkMenu {
+		left: 50%;
+		margin-left: -24px;
+	}
+	
+	header .logo h1 {
+		background-position: center bottom;
+		text-indent: -800px;
+		overflow: hidden;
+		padding: 0;
+		background-size: 179px;
+	}
+	
+	
+	/* Slider ----------- */
+	.slider .description {
+		position: relative;
+		bottom: 25px;
+		width: 100%;
+		height: auto;
+		left: 0;
+	}
+	.slider .description h4{min-width: 100%;}
+	.slider .description span {color:#283c4f; font-size:19px;}
+	
+	
+	/* Top Cacilds ----------- */
+	.topCacilds .top{
+		width: 100%;
+		display:block;
+		margin:0 0px 30px 0px;
+	}
+
+
+	
+	/* Divolts Porris ------- */
+	.divoltsPorris .divolts{
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.divoltsPorris .divolts {
+		display: block;
+		margin: 0 0px 30px 0px;
+		height: auto;
+		padding-bottom: 20px;
+	}
+	
+	
+	
+	/* Paisis, Pirulita, Cevadiss-------- */
+	.paisis, .pirulita, .cevadiss{
+		width: 100%;
+		margin-right: 0;
+		float: none;
+		margin-bottom: 40px;
+	}
+	
+	
+    
+	
+	
+	/* Publicidade -------- */
+	.publicidade-mobile {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	.publicidade-mobile img{width:100%;}
+	
+	
+	
+	/* Footer ---------- */
+	footer .copyright {
+		padding:20px 0;
+		height:auto;
+		width: 100%;
+		background:none;
+	}
+	
+}
+
+
+@media only screen and (max-width: 336px){
+	/* Pirulita / Cevadiss ------------- */
+	.pirulita .titleSection,
+	.cevadiss .titleSection{text-align:center;}
+	
+	.itemPirulita, .itemCevadiss{height: auto;}
+	
+	.itemPirulita figure, 
+	.itemCevadiss figure, 
+	.itemPirulita .desc, 
+	.itemCevadiss .desc{
+		display: block;
+		float: none;
+		text-align: center;
+		width:100%;
+	}
+	
+	.itemPirulita .desc, 
+	.itemCevadiss .desc{
+		margin:5px 0 30px;}
+		
+}
